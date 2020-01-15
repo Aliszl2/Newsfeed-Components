@@ -129,7 +129,6 @@ function createArticle(
   article.append(firstPara);
   article.append(secondPara);
   article.append(thirdPara);
-  article.append(thirdPara);
   article.append(expandBtn);
 
   // 4- Configure text/img content
@@ -138,14 +137,16 @@ function createArticle(
   firstPara.textContent = firstParagraph;
   secondPara.textContent = secondParagraph;
   thirdPara.textContent = thirdParagraph;
-  expandBtn.src = "../assets/menu.png";
+  expandBtn.textContent = "expand";
+  // expandBtn.src = "../assets/menu.png";
 
   // 5- Add dynamic functionality
+  
   expandBtn.addEventListener("click", event => {
     console.log("Click detected on expandBtn", event.target);
-    expandBtn.classList.toggle("article-open");
+    article.classList.toggle("article-open");
+    {expandBtn.textContent = "close"};
   });
-
   return article;
 }
 
