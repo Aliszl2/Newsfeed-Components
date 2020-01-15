@@ -94,17 +94,15 @@ data.unshift({
   secondParagraph: "Ingredients: 250g jumbo porridge oats, 125g butter, 125g light brown sugar, 2-3 tbsp golden syrup",
   thirdParagraph: "Method:Heat oven to 200C/180C fan/gas 6. Mix all ingredients.Lightly grease a 20x20cm baking tin with butter and spoon in the mixture. Press into the corners with the back of a spoon so the mixture is flat and score into 12 squares. Bake for around 15 minutes until golden brown."
 });
+
+// Step 1: Create a function that creates a component. You will want your component to look like the template below:
 // <div class="article">
 //<h2>{title of the article}</h2>
 //<p class="date">{date of the article}</p>
-
 //{three separate paragraph elements}
-
 // <span class='expandButton'></span>
 //</div>
 
-//Hint: You will need to use createElement more than once here!
-// Step 1: Create a function that creates a component. You will want your component to look like the template below:
 //let args = {title,date,firstParagraph,secondParagraph,thirdParagraph}
 //title,date,firstParagraph,secondParagraph,thirdParagraph
 function createArticle(
